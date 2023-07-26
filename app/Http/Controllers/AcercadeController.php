@@ -6,8 +6,12 @@ use Illuminate\Http\Request;
 
 class AcercadeController extends Controller
 {
-    public function index()
-    {
-        return view('acercade');
-    }
+    return view('acercade', [
+        'Apellido' => 'Apellidos',
+        'Nombres' => 'Nombres',
+        'Profesion' => 'Profesion',
+        'level' => 'level',
+        'diurno' => 'diurno',
+    ]);
+
 }
